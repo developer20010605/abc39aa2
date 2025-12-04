@@ -2,8 +2,7 @@
   "canisters": {
     "backend": {
       "main": "backend/main.mo",
-      "type": "motoko",
-      "args": "--enhanced-orthogonal-persistence"
+      "type": "motoko"
     },
     "frontend": {
       "dependencies": ["backend"],
@@ -14,10 +13,11 @@
       "type": "assets"
     }
   },
-  "output_env_file": ".env",
   "defaults": {
     "build": {
       "packtool": "mops sources"
     }
-  }
+  },
+  "output_env_file": ".env",
+  "version": 1
 }
